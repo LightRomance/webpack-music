@@ -10,6 +10,7 @@ import "../style/react-range.css";
 import "../style/style.css";
 
 console.log("hi");
+console.log("hi there");
 
 const App = () => {
   const store = createStore(reducers, {}, applyMiddleware(ReduxThunk));

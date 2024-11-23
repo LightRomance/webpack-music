@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router';
-const db = require('../../database/queries/db');
+import React, { Component } from "react";
+import { Link } from "react-router";
+const db = require("../../database/queries/db");
 
 class Header extends Component {
   constructor(props) {
@@ -24,20 +24,19 @@ class Header extends Component {
         <nav>
           <div className="nav-wrapper">
             <div className="col s12">
-              <a href="#" className="brand-logo">UpStar Music</a>
+              <a href="#" className="brand-logo">
+                UpStar Music
+              </a>
               <ul id="nav-mobile" className="right hide-on-med-and-down">
                 <li>
                   <Link
                     to={`/artists/${this.state.id}`}
-                    onClick={this.setLink.bind(this)}
-                  >
+                    onClick={this.setLink.bind(this)}>
                     Random Artist
                   </Link>
                 </li>
                 <li>
-                  <Link to={'/artists/new'}>
-                    Create Artist
-                  </Link>
+                  <Link to={"/artists/new"}>Create Artist</Link>
                 </li>
               </ul>
             </div>
@@ -46,6 +45,6 @@ class Header extends Component {
       </div>
     );
   }
-};
+}
 
 export default Header;
